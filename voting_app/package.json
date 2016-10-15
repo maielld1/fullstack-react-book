@@ -1,0 +1,18 @@
+{
+  "name": "voting_app",
+  "version": "1.0.1",
+  "author": "Fullstack.io",
+  "scripts": {
+    "go": "open http://localhost:8080; npm run server",
+    "e2e": "nightwatch",
+    "test": "./node_modules/.bin/concurrently -k 'npm run server' 'npm run e2e'",
+    "server": "./node_modules/http-server/bin/http-server . -p 8080"
+  },
+  "private": true,
+  "dependencies": {
+    "http-server": "0.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "2.2.0"
+  }
+}
